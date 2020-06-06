@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url("./global.css");
+
+body {
+  background: var(--write-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--title-color);
+}
+
+.green {
+  color: var(--success);
+  font-weight: 700;
+}
+
+#page-home {
+  background: url("../img/home-background.svg") no-repeat;
+  height: 100vh;
+  background-position: 35vw bottom;
+}
+
+#page-home .content {
+  width: 90%;
+  max-width: 1100px;
+  height: 100%;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.content header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 48px;
+}
+
+.content header a {
+  display: flex;
+  color: var(--title-color);
+  font-weight: 700;
+}
+
+.content header a span {
+  background: url("../img//log-in.svg") no-repeat;
+
+  margin-right: 1rem;
+  display: flex;
+
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.content main {
+  max-width: 560px;
+  color: var(--title-color);
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page-home main h1 {
+  font-size: 3.35rem;
+}
+
+#page-home main p {
+  font-size: 1.5rem;
+  line-height: 38px;
+  margin-top: 24px;
+}
+
+#page-home main a {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+
+  background: var(--primary);
+  color: var(--write);
+  transition: 400ms;
+}
+
+#page-home main a:hover {
+  filter: brightness(1.2);
+}
+
+#page-home main a span {
+  width: 72px;
+  height: 72px;
+
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-home main a span::after {
+  content: "";
+  background-image: url("../img//search.svg");
+  width: 20px;
+  height: 20px;
+}
+
+#page-home main a strong {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  #page-home {
+    background-position-x: 70vw;
+  }
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+  #page-home header a {
+    position: absolute;
+    bottom: 48px;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #page-home main {
+    align-items: center;
+  }
+}

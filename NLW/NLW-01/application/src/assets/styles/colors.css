@@ -1,0 +1,18 @@
+:root {
+  --base-color: #c6538c;
+  --border-dark: rgba(var(--base-color), 0.88);
+
+  --primary: #7159c1;
+  --title-color: #322153;
+
+  --write: #fff;
+  --write-light: #f0f0f5;
+  --success: #28c142;
+  --danger: #dc0537;
+
+  --border-primary: rgba(var(--primary), 0.88);
+
+  --desktop: 1200px;
+  --tablet: 900px;
+  --mobile: 480px;
+}
